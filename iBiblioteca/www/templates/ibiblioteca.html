@@ -1,0 +1,20 @@
+<ion-content>
+	<div class="bar bar-header bar-positive">
+ 	 	<h1 class="title"></h1>
+ 	 	<a ui-sref="main" class="button button-icon icon icon-left ion-chevron-left">Back</a>
+  		<div class="h1 title">iBilbioteca</div>
+	</div>
+	<br><br>
+	<ion-list>
+  <ion-item ng-repeat="book in books">
+  <div class="list">
+      <a class="item item-thumbnail-left" ui-sref="bookDetail({id: $index})">
+        <img ng-src="{{book.cover}}" alt="{{book.title}}">
+        <strong>{{book.title}}</strong><br>
+        <strong>Autor:</strong>  {{book.author}} <br>
+        <strong>Año:</strong>  {{book.year}} <br>
+      </a>
+      </div>
+  </ion-item>
+</ion-list>
+</ion-content>

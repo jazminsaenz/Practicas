@@ -1,0 +1,14 @@
+<ion-content>
+	<div class="bar bar-header bar-positive">
+ 	 	<h1 class="title"></h1>
+ 	 	<a ui-sref="consulta" class="button button-icon icon icon-left ion-chevron-left">Back</a>
+  		<div class="h1 title">Curriculum</div>
+	</div>
+	<br><br>
+	<ion-list>
+  <ion-item ng-repeat="work in works">
+    <strong>{{work.date}}</strong><br>  
+    <p>{{work.description}}</p>
+  </ion-item>
+</ion-list>
+</ion-content>
